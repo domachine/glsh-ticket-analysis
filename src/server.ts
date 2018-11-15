@@ -1,4 +1,4 @@
-import { ServerRequest, ServerResponse } from 'http'
+import { IncomingMessage } from 'http'
 import { parse } from 'querystring'
 import { text, createError } from 'micro'
 import * as request from 'request-promise-native'
@@ -28,7 +28,7 @@ const servicesP = createAutotaskClient({
   })
 )
 
-export default async (req: ServerRequest, res: ServerResponse) => {
+export default async (req: IncomingMessage) => {
   const services = await servicesP
   const body = parse(await text(req))
   const { query } = URL.parse(req.url || '/', true)
