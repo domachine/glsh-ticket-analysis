@@ -1,0 +1,11 @@
+{
+  "env": {
+    "SLACK_API_TOKEN": "@slack-api-token",
+    "SLACK_WEBHOOK_URL": "@slack-webhook-url",
+    "AZURE_API_URL": "https://westcentralus.api.cognitive.microsoft.com",
+    "AZURE_API_KEY": "@azure-api-key",
+    "AUTOTASK_USERNAME": "@autotask-username",
+    "AUTOTASK_PASSWORD": "@autotask-password",
+    "TOKEN": "@token"
+  }
+}

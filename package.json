@@ -1,0 +1,45 @@
+{
+  "name": "gas-ticket-analysis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro lib/server.js",
+    "dev": "concurrently 'tsc --watch' 'micro-dev lib/server.js'",
+    "build": "tsc",
+    "test": "tsc --noEmit && jest"
+  },
+  "jest": {
+    "moduleFileExtensions": ["ts", "tsx", "js", "json"],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": ["**/__tests__/*.(ts|tsx)", "**/*.test.(ts|tsx)"],
+    "mapCoverage": true
+  },
+  "keywords": [],
+  "author": "Dominik Burgdörfer <db@domachine.de> (https://domachine.de/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^21.1.6",
+    "@types/micro": "^7.3.1",
+    "@types/node": "^8.0.50",
+    "@types/ramda": "^0.25.6",
+    "@types/request-promise-native": "^1.0.10",
+    "concurrently": "^3.5.0",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1",
+    "micro-dev": "^1.4.0",
+    "ts-jest": "^21.2.2",
+    "typescript": "^2.6.1"
+  },
+  "dependencies": {
+    "@domachine/autotask": "0.0.0",
+    "bluebird": "^3.5.1",
+    "micro": "^9.0.1",
+    "ramda": "^0.25.0",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5",
+    "xml2js": "^0.4.19"
+  }
+}

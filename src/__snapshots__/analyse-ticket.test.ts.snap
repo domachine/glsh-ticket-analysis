@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Analyse ticket 1`] = `
+Array [
+  "10708",
+]
+`;
+
+exports[`Analyse ticket 2`] = `
+Array [
+  ". Blubasdasdad",
+]
+`;
+
+exports[`Analyse ticket 3`] = `
+Array [
+  Object {
+    "description": "Blubasdasdad",
+    "id": "10708",
+    "priority": "4",
+    "title": "",
+    "userDefinedFields": Object {
+      "keyphrases": "",
+      "pbta": "1",
+      "textanalytics": "15",
+    },
+  },
+]
+`;
